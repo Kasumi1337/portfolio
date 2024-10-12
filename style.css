@@ -4,8 +4,14 @@
     margin: 0;
     padding: 0;
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     background-color: #161513;
+}
+#home {
+    scroll-behavior: smooth;
 }
 header {
     display: flex;
@@ -41,32 +47,37 @@ nav ul {
     border-radius: 50%;
     position: relative;
     top: 5px;
-    transition: 0.3s ease;
 }
 nav ul li {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    transition: 0.3s ease;
     cursor: pointer;
 }
 nav li:hover {
     background: linear-gradient(90deg, rgba(255,134,96,1) 0%, rgba(154,51,255,1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    transition: 0.3s ease;
 }
 nav ul li:hover > .point {
+    transition: 0.3s ease;
     width: 45px;
     border-radius: 20px;
     background: linear-gradient(90deg, rgba(255,134,96,1) 0%, rgba(154,51,255,1) 100%);
 }
+a {
+    color: white;
+    text-decoration: none;
+}
 main {
+    scroll-behavior: smooth;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
-    height: 100vh;
+    height: 200vh;
     width: 100vw;
     color: white;
     text-align: center;
@@ -114,4 +125,24 @@ main ul li button {
     background-color: #222222;
     color: white;
     border: 2px solid white;
+}
+
+.exp ul li {
+    width: 90px;
+}
+.exp ul li p {
+    width: 90px;
+}
+.exp ul li ion-icon {
+    font-size: 42px;
+}
+.exp ul li:hover {
+    background: linear-gradient(90deg, rgba(255,134,96,1) 0%, rgba(154,51,255,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.3s ease;
+
+}
+.exp h3 {
+    font-size: 42px;
 }
