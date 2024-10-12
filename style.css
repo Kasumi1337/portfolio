@@ -95,6 +95,11 @@ main h1 span {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+main h2 span {
+    background: linear-gradient(90deg, rgba(255,134,96,1) 0%, rgba(154,51,255,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 main p {
     width: 680px;
     color: #C5C5C5;
@@ -145,4 +150,39 @@ main ul li button {
 }
 .exp h3 {
     font-size: 42px;
+}
+.contact {
+    font-family: 'Poppins';
+    width: 100vw;
+    background-color: #191919;
+    height: 420px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.contact h3 {
+    font-size: 24px;
+    color: white;
+}
+.contact p {
+    color: #C5C5C5;
+    width: 676px;
+    font-size: 14px;
+}
+.contact ul {
+    display: flex;
+    width: 139px;
+    justify-content: space-between;
+    list-style: none;
+    align-self:center;
+}
+.contact a p {
+    font-size: 18px;
+
+}
+.contact ul li ion-icon {
+    color: white;
+    font-size: 30px;
 }
